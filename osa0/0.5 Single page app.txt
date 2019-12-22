@@ -1,0 +1,12 @@
+0.5: SINGLE PAGE APP
+Tekijä: Maria Sofia Koskela
+Single Page Appin tapauksessa kaikki sovelluskoodi sijaitsee palvelimella ja selain ainoastaan palauttaa/renderöi HTML-koodia, jota palvelin lähettää sille. Single Page Apissa kaikki toiminnallisuudet ja tiedot ladataan kerralla selaimeen, vaikka kaikkea ei välttämättä näytetä kerralla.
+Selain->Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+Palvelin->Selain: Palvelin lähettää selaimeen HTML-sivun.
+Palvelin->Selain: HTTP GET  https://fullstack-exampleapp.herokuapp.com/main.css
+Saa samalla aikaan kolme muutakin http-pyyntöä:
+Palvelin->Selain: main css. Lataa tyylitiedoston, joka määrittelee selaimen ladattavan dokumentin ulkoasun.
+Palvelin->Selain: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+ spa js. Hakee ladattavan JavaScript-koodia sisältävän tiedoston.
+Palvelin->Selain: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+data json. Palauttaa/lataa muistiinpanot JSON-raakadatana.

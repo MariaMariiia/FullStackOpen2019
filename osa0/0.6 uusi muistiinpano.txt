@@ -1,0 +1,6 @@
+TEKIJÄ:MARIA SOFIA KOSKELA
+Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+Selain lähettää lomakkeen tiedot palvelimelle, joka lataa näkyville uuden muistiinpanon, sekä muut näkyvillä olevat muistiinpanot.
+
+Sovellus koostuu yhdestä ainoasta HTML-sivusta, jonka palvelin lähettää ja jonka sisältöä menipuloidaan Javascriptillä, joka suoritetaan selaimessa.

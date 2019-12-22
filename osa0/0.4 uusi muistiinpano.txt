@@ -1,0 +1,13 @@
+TEHTÄVÄ 0.4: UUSIN MUISTIINPANO
+Tekijä: Maria Sofia Koskela
+
+Painettaessa lomakkeen painiketta, lähettää selain lomakkeelle kirjoitetun/syötetyn datan palvelimelle.
+Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+Selain->Palvelin: osoite on new note. Kyseessä on uudelleenohjauspyyntö, minkä avulla palvelin kehottaa selainta tekemään uuden GET-pyynnön osoitteeseen notes eli lisäämään kyseisen muistiinpanon sivustolle.
+Selain-Palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+Palvelin->Selain: osoite/sivu on notes. Palauttaa selaimeen näkyville kaikki näkyvillä olevat, käyttäjien lisäämät/postaamat muistiinpanot/muistiinpanojen sivun. Sisältää tekstiä/HTML-koodia, joka määrittelee sivun rakenteen. Saa samalla aikaan kolme muutakin http-pyyntöä:
+Palvelin->Selain: main css. Lataa tyylitiedoston, joka määrittelee selaimen ladattavan dokumentin ulkoasun.
+Palvelin->Selain:  main js. Hakee JavaScript-koodia sisältävän tiedoston.
+Palvelin->Selain: data json. Palauttaa/lataa muistiinpanot JSON-raakadatana.
+
+Datan saapuessa palvelimelta selain suorittaa tapahtumankäsittelijän, joka renderöi palvelimella olevat muistiinpanot näkyville ruudulle ja selaimeen.
