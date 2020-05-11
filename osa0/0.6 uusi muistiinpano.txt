@@ -1,4 +1,4 @@
-TEKIJÄ:MARIA SOFIA KOSKELA
+TEKIJÄ:MARIA KOSKELA
 Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
 
 Selain lähettää lomakkeen tiedot palvelimelle, joka lataa näkyville uuden muistiinpanon, sekä muut näkyvillä olevat muistiinpanot.
