@@ -1,5 +1,5 @@
 TEHTÄVÄ 0.4: UUSIN MUISTIINPANO
-Tekijä: Maria Sofia Koskela
+Tekijä: Maria Koskela
 
 Painettaessa lomakkeen painiketta, lähettää selain lomakkeelle kirjoitetun/syötetyn datan palvelimelle.
 Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
