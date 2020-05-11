@@ -1,6 +1,12 @@
 TEKIJÄ:MARIA KOSKELA
-Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+Selain  -----> Palvelin: HTTP POST  https://fullstack-exampleapp.herokuapp.com/new_note_spa
 
-Selain lähettää lomakkeen tiedot palvelimelle, joka lataa näkyville uuden muistiinpanon, sekä muut näkyvillä olevat muistiinpanot.
+Selain lähettää pelkästään yhden pyynnön palvelimelle: new_note_spa
+Osoite on new_note_spa, tyyppi on POST ja se sisältää JSON-muotoisen uuden muistiinpanon,
+johon kuuluu sekä aikaleima (date) että sisältö (content).
 
-Sovellus koostuu yhdestä ainoasta HTML-sivusta, jonka palvelin lähettää ja jonka sisältöä menipuloidaan Javascriptillä, joka suoritetaan selaimessa.
+Palvelin ------> Selain: Palvelin vastaa selaimelle antamalla statuskoodin 201 Create, eli uusi muistiinpano on luotu onnistuneesti.
+Tässä tapauksessa palvelin ei pyydä uudelleenohjausta, vaan selain pysyy koko ajan samalla sivulla
+ja muita HTTP-pyyntöjä ei suoriteta.
+
+Single Page App -versiossa lomakkeen tietojen lähettämisestä vastaa selaimen lataamassa JavaScript-tiedostossa määritelty koodi. 
